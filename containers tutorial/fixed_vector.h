@@ -56,14 +56,14 @@ public:
 
   // Element access
 
-  reference operator [] (size_type pos) {m_data[pos];}
+  reference operator [] (size_type pos) {return m_data[pos];}
   const_reference operator [] (size_type pos) const { m_data[pos]; }
 
-  reference front() { m_data[0]; }
+  reference front() {return m_data[0]; }
   const_reference front() const { m_data[0]; }
 
-  reference back() { m_data[m_current_size - 1]; }
-  const_reference back () const { m_data[m_current_size - 1]; }
+  reference back() { return m_data[m_current_size - 1]; }
+  const_reference back () const { return m_data[m_current_size - 1]; }
 
 
   // Iterators
